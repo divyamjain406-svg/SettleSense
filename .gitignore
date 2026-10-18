@@ -1,0 +1,110 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Testing and Type Checking
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+
+# Environment Variables and Credentials
+.env
+.env.local
+.env.*
+!.env.example
+
+# OS and Editor Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Runtime logs & temp
+*.log
+/tmp/
+.temp/
+
+# Vector Store and Model Artifacts (reproducible from code)
+vector_store/*
+!vector_store/.gitkeep
+models/*
+!models/.gitkeep
+
+# Chroma runtime
+chroma.sqlite3
+
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# macOS
+.DS_Store
+
+# Downloaded models and trained model artifacts
+models/*
+!models/.gitkeep
+
+# Local vector database and runtime artifacts
+vector_store/*
+!vector_store/.gitkeep
+chroma_db/
+*.sqlite3
+*.db
+
+# Logs
+*.log
+
+# Generated AAT submission files (code repository only)
+report/SettleSense_AAT_Report.docx
+report/SettleSense_AAT_Report.pdf
+report/SettleSense_AAT_Report.md
+report/REPORT_DATA_AUDIT.md
+
+# Local report templates and report-only assets
+/reference/
+/report/

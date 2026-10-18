@@ -1,0 +1,7 @@
+case_id,expected_category,classifier_predicted,approach_c_predicted,approach_c_correct,approach_c_status,approach_c_is_fallback,approach_c_latency_s,approach_d_predicted,approach_d_correct,approach_d_status,approach_d_is_fallback,approach_d_latency_s,approach_d_llm_latency_s,approach_d_retrieval_ms,approach_d_citations,approach_d_citation_validity,approach_d_evidence_support
+SS-0006,SSI_MISMATCH,,SSI_MISMATCH,True,SUCCESS,False,5.707,SSI_MISMATCH,True,SUCCESS,False,6.393,6.375,16.47,"['PROC_01', 'PROC_02', 'PROC_03']",1.0,1.0
+SS-0056,TRADE_DETAIL_MISMATCH,,SSI_MISMATCH,False,SUCCESS,False,6.789,TRADE_DETAIL_MISMATCH,True,SUCCESS,False,7.784,7.763,19.35,"['PROC_03', 'PROC_01', 'PROC_10']",1.0,1.0
+SS-0096,SECURITIES_SHORTFALL,,SECURITIES_SHORTFALL,True,SUCCESS,False,5.651,SSI_MISMATCH,False,SUCCESS,False,6.764,6.746,17.0,"['PROC_05', 'PROC_06', 'PROC_03']",1.0,1.0
+SS-0126,CASH_SHORTFALL,,CASH_SHORTFALL,True,SUCCESS,False,5.901,CASH_SHORTFALL,True,SUCCESS,False,6.823,6.803,19.11,"['PROC_07', 'PROC_08', 'PROC_04']",1.0,1.0
+SS-0146,COUNTERPARTY_UNCONFIRMED,,COUNTERPARTY_UNCONFIRMED,True,SUCCESS,False,6.116,COUNTERPARTY_UNCONFIRMED,True,SUCCESS,False,6.627,6.611,15.08,"['PROC_09', 'PROC_10', 'PROC_03']",1.0,1.0
+SS-0196,SETTLEMENT_TIMING,,SETTLEMENT_TIMING,True,SUCCESS,False,6.575,SETTLEMENT_TIMING,True,SUCCESS,False,7.508,7.486,21.22,"['PROC_12', 'PROC_08', 'PROC_13']",1.0,1.0

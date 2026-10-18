@@ -1,0 +1,74 @@
+[
+  {
+    "case_id": "SS-0001",
+    "expected_category": "SSI_MISMATCH",
+    "label_preview": "[SSI_MISMATCH] SS-0001: CROSS_BORDER_DVP",
+    "case_description": "Depository status MT548 from Euroclear Bank Brussels reported settlement rejection on CROSS_BORDER_DVP TRD-SSI-01-00-9935 for 65,120,141.15 EUR. Counterparty Citadel Execution Trust delivered against depository account DEP-87397, whereas internal trade record routed to custody account SAFEKEEP-2424. Economics and nominal quantity of 1,200,000 shares in FR249827706 were confirmed agreed.",
+    "trade_type": "CROSS_BORDER_DVP",
+    "transaction_status": "FAILED_SETTLEMENT_CUTOFF",
+    "exception_code": "EXC_SSI__130"
+  },
+  {
+    "case_id": "SS-0036",
+    "expected_category": "TRADE_DETAIL_MISMATCH",
+    "label_preview": "[TRADE_DETAIL_MISMATCH] SS-0036: CORP_BOND_DVP",
+    "case_description": "Central matching utility flagged nominal quantity discrepancy on CORP_BOND_DVP TRD-TRA-01-00-7371 with Kallisto Asset Clearing. Internal ledger records 125,000 units of FR393062061, whereas Kallisto Asset Clearing submitted an allocation ticket specifying 125,500 units. Execution ticket indicates block allocation variance.",
+    "trade_type": "CORP_BOND_DVP",
+    "transaction_status": "UNCONFIRMED_ALLEGEMENT",
+    "exception_code": "EXC_TRAD_514"
+  },
+  {
+    "case_id": "SS-0071",
+    "expected_category": "SECURITIES_SHORTFALL",
+    "label_preview": "[SECURITIES_SHORTFALL] SS-0071: DEPOSITORY_RECEIPT",
+    "case_description": "Custodian status notification from SIX SIS Switzerland for ticket TRD-SEC-01-00-7248 indicates 'Settlement Pending: Insufficient Securities Balance'. Delivery of 125,000 units of FR513061224 against 6,995,150.81 SEK to Citadel Execution Trust is suspended because available settled balance in our safekeeping account is only 86,919 shares.",
+    "trade_type": "DEPOSITORY_RECEIPT",
+    "transaction_status": "HELD_OPERATIONS_QUEUE",
+    "exception_code": "EXC_SECU_467"
+  },
+  {
+    "case_id": "SS-0106",
+    "expected_category": "CASH_SHORTFALL",
+    "label_preview": "[CASH_SHORTFALL] SS-0106: GOVT_BOND_DVP",
+    "case_description": "DvP settlement TRD-CAS-01-00-5500 in Monte Titoli Milan halted due to liquidity restriction. Our designated settlement Nostro bank advises that our intraday debit cap has been reached, preventing payment of 33,723,679.55 CAD to counterparty Citadel Execution Trust. Treasury operations has been notified to execute liquidity injection.",
+    "trade_type": "GOVT_BOND_DVP",
+    "transaction_status": "UNCONFIRMED_ALLEGEMENT",
+    "exception_code": "EXC_CASH_460"
+  },
+  {
+    "case_id": "SS-0141",
+    "expected_category": "COUNTERPARTY_UNCONFIRMED",
+    "label_preview": "[COUNTERPARTY_UNCONFIRMED] SS-0141: CROSS_BORDER_DVP",
+    "case_description": "Trade TRD-COU-01-00-9740 remains in unmatched status on central matching utility. Internal confirmation for CROSS_BORDER_DVP in CH234400576 with Solstice Securities Europe was dispatched on trade date, but counterparty has submitted no matching instruction or allegement. Multiple automated chasers have elicited no response.",
+    "trade_type": "CROSS_BORDER_DVP",
+    "transaction_status": "FAILED_SETTLEMENT_CUTOFF",
+    "exception_code": "EXC_COUN_195"
+  },
+  {
+    "case_id": "SS-0176",
+    "expected_category": "SETTLEMENT_TIMING",
+    "label_preview": "[SETTLEMENT_TIMING] SS-0176: ETF_CREATION_UNIT",
+    "case_description": "Settlement date discrepancy on ETF_CREATION_UNIT TRD-SET-01-00-1742 with Kallisto Asset Clearing in US900801470. Our ticket specifies settlement on T+1 under revised market rules, but counterparty instructed settlement on T+2. Depository Euroclear Bank Brussels rejected paired instruction due to mismatched intended settlement date (ISD).",
+    "trade_type": "ETF_CREATION_UNIT",
+    "transaction_status": "HELD_OPERATIONS_QUEUE",
+    "exception_code": "EXC_SETT_533"
+  },
+  {
+    "case_id": "SS-0211",
+    "expected_category": "UNDETERMINED",
+    "label_preview": "[UNDETERMINED] SS-0211: Incomplete / Ambiguous Case",
+    "case_description": "Settlement failure notification received from Clearstream Banking Luxembourg for trade AMB-001-3219 with Borealis Investment Banking. Status indicates 'FAIL - UNKNOWN REASON'. The message text is truncated and contains no error sub-codes, counterparty account details, or diagnostic information.",
+    "trade_type": "CROSS_BORDER_DVP",
+    "transaction_status": "SUSPENDED_UNSPECIFIED",
+    "exception_code": "EXC_AMB_106"
+  },
+  {
+    "case_id": "SS-0212",
+    "expected_category": "UNDETERMINED",
+    "label_preview": "[UNDETERMINED] SS-0212: Incomplete / Ambiguous Case",
+    "case_description": "Transaction AMB-002-6399 for DE765926290 remains in pending exception queue. Front-office trade support notes an apparent operational breakdown, but available logs show both a pending cash transfer and an unconfirmed allocation ticket from Zephyr Securities UK. Data is insufficient to determine the root cause.",
+    "trade_type": "DEPOSITORY_RECEIPT",
+    "transaction_status": "SUSPENDED_UNSPECIFIED",
+    "exception_code": "EXC_AMB_442"
+  }
+]

@@ -1,0 +1,121 @@
+{
+  "model_type": "TF-IDF + Logistic Regression",
+  "train_samples": 155,
+  "test_samples": 55,
+  "train_scenario_families": 31,
+  "test_scenario_families": 11,
+  "accuracy": 0.9454545454545454,
+  "macro_precision": 0.9292929292929294,
+  "macro_recall": 0.9333333333333332,
+  "macro_f1": 0.9280904280904282,
+  "weighted_f1": 0.9463465827102192,
+  "confusion_matrix": [
+    [
+      8,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      4,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      5,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      10,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      10,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      15
+    ]
+  ],
+  "labels": [
+    "SSI_MISMATCH",
+    "TRADE_DETAIL_MISMATCH",
+    "SECURITIES_SHORTFALL",
+    "CASH_SHORTFALL",
+    "COUNTERPARTY_UNCONFIRMED",
+    "SETTLEMENT_TIMING"
+  ],
+  "classification_report": {
+    "SSI_MISMATCH": {
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1-score": 0.8888888888888888,
+      "support": 10.0
+    },
+    "TRADE_DETAIL_MISMATCH": {
+      "precision": 0.6666666666666666,
+      "recall": 0.8,
+      "f1-score": 0.7272727272727273,
+      "support": 5.0
+    },
+    "SECURITIES_SHORTFALL": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 5.0
+    },
+    "CASH_SHORTFALL": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 10.0
+    },
+    "COUNTERPARTY_UNCONFIRMED": {
+      "precision": 0.9090909090909091,
+      "recall": 1.0,
+      "f1-score": 0.9523809523809523,
+      "support": 10.0
+    },
+    "SETTLEMENT_TIMING": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 15.0
+    },
+    "accuracy": 0.9454545454545454,
+    "macro avg": {
+      "precision": 0.9292929292929292,
+      "recall": 0.9333333333333332,
+      "f1-score": 0.9280904280904281,
+      "support": 55.0
+    },
+    "weighted avg": {
+      "precision": 0.953168044077135,
+      "recall": 0.9454545454545454,
+      "f1-score": 0.9463465827102191,
+      "support": 55.0
+    }
+  }
+}

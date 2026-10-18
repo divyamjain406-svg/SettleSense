@@ -1,0 +1,22 @@
+Metric,Value,Denominator / Sample Size
+Classifier Accuracy (Held-out Test Split),0.9455,N=55 cases
+Classifier Macro-F1 (Held-out Test Split),0.9281,N=55 cases
+Lexical Retrieval Hit@3 (Labelled Cases),0.9238,N=210 cases
+Lexical Retrieval Recall@3 (Labelled Cases),0.6881,N=210 cases
+Lexical Retrieval MRR,0.8714,N=210 cases
+Semantic Retrieval Hit@3 (Labelled Cases),0.9762,N=210 cases
+Semantic Retrieval Recall@3 (Labelled Cases),0.7286,N=210 cases
+Semantic Retrieval MRR,0.8905,N=210 cases
+Approach C Accuracy (Pilot Sample),0.8333,N=6 cases (genuine: 6)
+Approach C Mean Latency (All Attempted),6.123,N=6 attempted calls
+Approach C Median Latency (All Attempted),6.008,N=6 attempted calls
+Approach C Mean Latency (Genuine Success),6.123,N=6 successful calls
+Approach D Accuracy (Pilot Sample),0.8333,N=6 cases (genuine: 6)
+Approach D Mean Latency (All Attempted),6.983,N=6 attempted calls
+Approach D Median Latency (All Attempted),6.793,N=6 attempted calls
+Approach D Mean Latency (Genuine Success),6.983,N=6 successful calls
+Approach D Citation Validity Rate,1.0,N=6 genuine reports evaluated
+Approach D Automated Evidence Pass Rate (Heuristic),1.0,N=6 genuine reports evaluated (algorithmic entity/term check)
+Approach D Human-Reviewed Evidence Support,Pending SME Review,Requires operational subject-matter expert audit
+Ambiguous Cases Non-Definitive / Low Confidence,1.0,N=30 ambiguous cases
+Ambiguous Cases Human Escalation Rate,1.0,N=2 tested cases
